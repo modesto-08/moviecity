@@ -1,38 +1,31 @@
-# MovieCity — Landing Page
+# MovieCity - Seus Filmes
 
-Landing page responsiva de filmes feita com React 19, Vite 7, JavaScript (ESM), CSS puro e ESLint. O visual segue a referência enviada: fundo preto, texto branco, botões azuis e pôsteres em grade.
+O **MovieCity** é uma aplicação web desenvolvida para a navegação e consulta de catálogos de filmes e séries.
 
-## Requisitos
+## 🚀 Tecnologias Utilizadas
 
-- Node.js 20.19+ ou 22.12+
-- npm 10.9.2 ou compatível
+- **React** — Biblioteca JavaScript para a construção de interfaces
+- **Vite** — Ferramenta de compilação e servidor de desenvolvimento
+- **ESLint** — Padronização e qualidade de código
+- **CSS3** — Estilização modular da aplicação
 
-## Instalar e executar
+## 📁 Estrutura do Projeto
 
-```bash
-npm install
-npm run dev
-```
-
-Abra `http://localhost:3000`. Para usar a porta 5173 citada no roteiro, execute `npm run dev -- --port 5173` e abra `http://localhost:5173`.
-
-## Verificar
-
-```bash
-npm run lint
-npm run build
-```
-
-O build de produção é gerado em `dist/`. Para servi-lo localmente, pare o servidor de desenvolvimento com `Ctrl+C` e rode:
-
-```bash
-npm run preview
-```
-
-## Imagens
-
-Os seis pôsteres recebidos estão em `src/assets/`: `afterlife.jpg`, `transformers.jpg`, `mowgli.jpg`, `shift.png`, `squidgame.webp` e `harrypotter.jpg`.
-
-## Testar responsividade
-
-No navegador, abra as ferramentas de desenvolvedor (F12), ative a barra de dispositivos (Ctrl+Shift+M) e confira 1440px, 1024px, 768px, 600px e 375px. Confirme que o menu móvel abre/fecha e que não há rolagem horizontal.
+```text
+moviecity/
+├── public/
+│   ├── manus-routes.json
+│   └── moviecity-logo.svg
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── Home.jsx
+│   │   └── Main.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── eslint.config.js
+├── index.html
+├── package.json
+└── vite.config.js
